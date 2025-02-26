@@ -59,5 +59,10 @@ http://localhost:3000
 ```
 
 ## 4. Sonuç
-Bu adımlar takip edilerek proje başarıyla kurulabilir ve çalıştırılabilir. Olası hata ve sorunlar için proje dokümantasyonunu veya geliştirici notlarını kontrol edebilirsiniz. 🚀
+Bu adımlar takip edilerek proje başarıyla kurulabilir ve çalıştırılabilir. Olası hata ve sorunlar için proje dokümantasyonunu veya geliştirici notlarını kontrol edebilirsiniz. 
+
+
+![webb](https://github.com/user-attachments/assets/f82a6e25-75ef-4409-9814-14605f5697c7)
+![Ekran görüntüsü 2024-05-29 224145](https://github.com/user-attachments/assets/b2704cff-d9d0-4d2d-a925-19326ff450f9)
+![Ekran görüntüsü 2024-05-29 224515](https://github.com/user-attachments/assets/69578231-d039-41f8-a30d-c76cca261683)
 
