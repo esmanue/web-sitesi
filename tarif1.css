@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332,51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --egg-shell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  background-color: rgb(247, 191, 227);
+  color: var(--wenge-brown);
+  min-height: 100vh;
+  font-family: sans-serif;
+  line-height: 1.4;
+  display: grid;
+  place-content: center;
+}
+.navbar {
+  background-color:  #f88897;
+  width: 100%;
+  height: 60px;
+  color: white;
+  position: relative;
+  top: 0;
+}
+
+.navbar-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.searchbar a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-style: italic;
+  display: inline-block;
+}
+
+.profil-container {
+  cursor: pointer;
+  position: relative;
+  left: 200px;
+}
+
+.profil-container:hover {
+  font-weight: bold;
+}
+
+.hesap {
+  padding: 5px 30px;
+  margin-left: 30px;
+  border: 0;
+  outline: 0;
+  background-color: white;
+  color:  #f88897;
+  font-size: 17px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+}
+
+.hesap a,
+.hesap i {
+  text-decoration: none;
+  color: #f88897;
+  transition: color 0.4s;
+}
+
+.hesap:hover,
+.hesap:hover a,
+.hesap:hover i {
+  color: white;
+  background-color: #f88897;
+}
+
+.hesap:hover .drop-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drop-menu {
+  background:  #f88897;
+  width: 180px;
+  top: 40px;
+  line-height: 45px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 1002;
+}
+
+.drop-menu li {
+  list-style: none;
+}
+
+.drop-menu li a {
+  display: block;
+  padding: 0 15px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.4s;
+  text-decoration: underline;
+}
+
+.drop-menu li a:hover {
+  background-color:  #f88897;
+}
+
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2 {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--dark-charcoal);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--nutmeg);
+  font-size: 1.5rem;
+}
+
+.recipe-step {
+  margin: 1rem 0;
+}
+
+.nutrition-step {
+  margin-top: 1rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+  list-style-type: circle;
+}
+
+ul li {
+  color: var(--nutmeg);
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+ul li span {
+  color: var(--wenge-brown);
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 1px solid var(--light-grey);
+}
+
+.container {
+  max-width: 800px;
+  background-color: var(--white);
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+.container .recipe-img {
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.container .recipe-img img {
+  border-radius: 1rem;
+}
+
+.recipe-information {
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.description {
+  margin: 1.5rem 0;
+}
+
+.recipe-prep-time {
+  background-color: var(--rose-white);
+  padding: 1.25rem;
+  border-radius: 1rem;
+}
+
+.recipe-prep-time h3 {
+  color: var(--dark-raspberry);
+  margin-bottom: .75rem;
+}
+
+.recipe-prep-time ul li::marker {
+  color: var(--dark-raspberry);
+}
+
+.ingredients li {
+  margin-bottom: .5rem;
+}
+
+.ingredients li span {
+  font-weight: initial;
+}
+
+.instructions .item {
+  padding-left: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.instructions .item .num {
+  color: var(--nutmeg);
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+.instructions .item p span {
+  font-weight: 700;
+}
+
+@media (max-width: 540px) {
+  h1 {
+    margin-top: 2rem;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .container .recipe-img {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .container .recipe-img img {
+    border-radius: 0;
+  }
+}
